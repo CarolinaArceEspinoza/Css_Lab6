@@ -1,0 +1,206 @@
+/* Basic layout styles */
+body {
+	font-size: 100%;
+	font-family: 'Raleway', sans-serif;
+	background: #fbfbfd;
+}
+#container {
+	background: #ffffff;
+	width: 80%;
+	margin: 0 auto;
+	padding: 0px 2.5%;
+}
+header {
+	width: 80%;
+    height: auto;
+    margin: 0 auto;
+    background: #f1f1f3;
+    text-align: center;
+	padding: 2.5%;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+h1 {
+	 font-size: 40px;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 800;
+    width: auto;
+    display: inline-block;
+}
+main {
+	display: flex;
+	flex-direction: row;
+}
+
+
+
+/* Section */
+#s1 {
+    background-color: #ffffff;
+    border-radius: 2px;
+    width: 98%;
+    padding: 2vw 2vw;
+    margin: 30px auto;
+    list-style: none;
+    position: relative;
+    align-items: stretch;
+    justify-content: space-between;
+    column-count: 4;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+}
+#s1::before{
+	content: "";
+    position: absolute;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+    border-radius: 1px;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+#s1 h2 {
+    background-color: #69a7ae;
+    padding: 0px 2vw;
+    text-align: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    color: #3f6975;
+    font-size: 4vw;
+    position: relative;
+    grid-column: 1 / -2;
+    width: auto;
+    background-size: contain;
+    margin: 0px 0px 0px -3vw;
+    text-transform: uppercase;
+}
+#s1 h4 {    
+	color: #68a6ae;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0px;
+}
+#s1 h3 {
+    margin:0px;
+    width: auto;
+    text-align: left;
+    font-size: 30px;
+    padding: 0px;
+    font-weight: lighter;
+    color: #68a6ae;
+    text-transform: uppercase;
+    grid-column: 1 / -1;
+}
+
+#s1 article {
+    padding: 0px;
+    background: #edeff0;
+    box-sizing: border-box;
+    display: grid;
+    align-content: space-between;
+    align-items: stretch;
+    margin-top: 30px;
+}
+#s1 figure {
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+    position: relative;
+    display: inherit;
+}
+#s1 figure img {
+	width: 100%;
+}
+#s1 figure figcaption {
+    background: #68a6ae;
+    padding: 10px;
+    width: auto;
+    position: absolute;
+    top: 9px;
+    color: #ffffff;
+    text-transform: uppercase;
+    right: 0px;
+}
+#s1 p {
+	color: #406974;
+    font-weight: lighter;
+    line-height: 26px;
+    text-align: justify;
+    width: 90%;
+    margin: 5%;
+    min-height: 130px;
+}
+#s1 button {
+   margin: 0px;
+    border: 0px;
+    z-index: 10;
+    padding: 0px;
+}
+
+#s1 a {
+	color: #67a5af;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 27px;
+    width: 100%;
+    border-top: 1px solid #bdd6da;
+    text-align: left;
+    display: block;
+    font-weight: 300;
+    z-index: 10;
+    background: #d3e4e6;
+    padding: 5%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+#s1 a:hover {
+    background: #7ea0a8;
+    color: #ffffff;
+}
+footer {text-align: center;
+    height: 60px;
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top: 1px solid #e7e7e7;
+    margin-top: 20px;
+    background: #f1f1f3;
+    color: #a9a9a9;}
+
+    /* Quiz */
+aside {
+    background-color: #ffffff;
+    border-radius: 2px;
+    width: 98%;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    display: inline-block;
+}
+
+.questions {
+	color: gray;
+}
+.questions li {margin-top: 30px;}
+.questions li p:nth-child(2) {
+	color: red; margin: 0px;
+}
+
+/* Some corrections for small devices */
+@media only screen and (max-width: 700px){ 
+	#s1 {
+		padding:4vw;
+        box-sizing: border-box;
+	}
+    #s1 h2 {
+        font-size: 40px;
+    }
+}
